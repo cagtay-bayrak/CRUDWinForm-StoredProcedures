@@ -17,5 +17,19 @@ namespace FomDetails
             InitializeComponent();
         }
 
+        private void btnRegistration_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInvoice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

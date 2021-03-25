@@ -32,12 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnInvoice = new System.Windows.Forms.Button();
             this.btnRegistration = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnInvoice);
             this.panel1.Controls.Add(this.btnRegistration);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -61,6 +63,7 @@
             this.btnInvoice.Text = "Invoice";
             this.btnInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnInvoice.UseVisualStyleBackColor = false;
+            this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
             // 
             // btnRegistration
             // 
@@ -77,6 +80,23 @@
             this.btnRegistration.Text = "Registration";
             this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistration.UseVisualStyleBackColor = false;
+            this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(365, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 82);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Invoice";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnInvoice_Click);
             // 
             // Form1
             // 
@@ -89,6 +109,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -97,10 +118,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+ 
         private System.Windows.Forms.Button btnInvoice;
         private System.Windows.Forms.Button btnRegistration;
+        private System.Windows.Forms.Button button1;
     }
 }
 
