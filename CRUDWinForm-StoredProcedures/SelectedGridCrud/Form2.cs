@@ -11,7 +11,7 @@ namespace SelectedGridCrud
 {
     public partial class Form2 : Form
     {
-        
+       
 
         public Form2()
         {
@@ -69,12 +69,22 @@ namespace SelectedGridCrud
             }
         }
 
+        private bool IsValid()
+        {
+            if (txtName.Text == string.Empty)
+            {
+                MessageBox.Show("Student Name is required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+
+            return true;
+        }
+
         private void btnInsert_Click(object sender, EventArgs e)
         {
             if (IsValid())
             {
-
-
                 SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=CRUD_SP_DB;Integrated Security=True");
                 SqlCommand cmd = new SqlCommand("INSERT INTO Students VALUES (@Name,@FatherName,@RollNumber,@Address,@Mobile)", connection);
                 cmd.CommandType = CommandType.Text;
@@ -87,23 +97,15 @@ namespace SelectedGridCrud
                 cmd.ExecuteNonQuery();
                 connection.Close();
                 MessageBox.Show("new user added", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GetStudentRecord();
+                clearForm();
             }
         }
 
-        private bool IsValid()
-        {
-            if (txtName.Text == string.Empty)
-            {
-                MessageBox.Show("Student Name is required", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-
-            return true;
-        }
 
 
 
-      
+
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -117,10 +119,31 @@ namespace SelectedGridCrud
 
         private void btnclear_Click(object sender, EventArgs e)
         {
+            clearForm();
 
         }
 
+        private void clearForm()
+        {
+            txtName.Clear();
+            txtAddress.Clear();
+            txtFatherName.Clear();
+            txtMobile.Clear();
+            txtRollNumber.Clear();
+            txtName.Focus();
+        }
 
 
+        //dataGridView1 de seçilen kayıt texboxlarda yazar. form dataGridView1 selectionmode özelliği FullRowSelect yapıldı
+        public int StudentID;
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            StudentID = Convert.ToInt32(dataGridView1.Rows[0].Cells[0].Value);
+            txtName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            txtFatherName.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            txtRollNumber.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            txtAddress.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            txtMobile.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+        }
     }
 }
