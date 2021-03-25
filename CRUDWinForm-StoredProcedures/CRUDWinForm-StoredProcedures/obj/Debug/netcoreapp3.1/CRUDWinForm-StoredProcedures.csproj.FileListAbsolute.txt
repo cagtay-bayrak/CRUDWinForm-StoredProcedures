@@ -20,3 +20,4 @@ C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\CRUDWinForm-
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\obj\Debug\netcoreapp3.1\CRUDWinForm-StoredProcedures.csproj.CoreCompileInputs.cache
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\obj\Debug\netcoreapp3.1\CRUDWinForm-StoredProcedures.csproj.CopyComplete
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\obj\Debug\netcoreapp3.1\CRUDWinForm-StoredProcedures.csprojAssemblyReference.cache
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\obj\Debug\netcoreapp3.1\CRUDWinForm_StoredProcedures.Properties.Resources.resources

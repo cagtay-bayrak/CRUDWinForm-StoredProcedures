@@ -96,5 +96,52 @@ BEGIN
     -- Insert statements for procedure here
  select * from ProductInfo_Tab
 END
+--------------------------------------------------------------------------------------------------------------------------------------
+USE [CRUD_SP_DB]
+GO
+/****** Object:  StoredProcedure [dbo].[SP_Product_Delete]    Script Date: 3/25/2021 3:43:22 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Cagtay bayrak
+-- Create date: 2021-03-25
+-- Description:	Delete Procedures
+-- =============================================
+ALTER PROCEDURE [dbo].[SP_Product_Delete]
+	-- Add the parameters for the stored procedure here
+	 @ProductID int
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+  Delete ProductInfo_Tab where ProductID=@ProductID
+END
 
 
+-----------------------------------------------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Cagtay bayrak
+-- Create date: 2021-03-25
+-- Description:	Search Procedures
+-- =============================================
+create PROCEDURE [dbo].[SP_Product_Search]
+	-- Add the parameters for the stored procedure here
+	 @ProductID int
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+  select * from ProductInfo_Tab where ProductID=@ProductID
+END

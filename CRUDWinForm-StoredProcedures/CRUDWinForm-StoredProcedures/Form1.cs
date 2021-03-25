@@ -52,12 +52,12 @@ namespace CRUDWinForm_StoredProcedures
                     status = rdoRunning.Text;
                 }
                 SqlCommand com = new SqlCommand("exec dbo.SP_Product_Insert '" + int.Parse(txtProductid.Text) + "', '" + txtitemname.Text + "', '" + cbocolor.Text + "', '" + status + "', '" + txtAddress.Text + "' ", con);
-               
+
                 com.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Successfully Saved");
                 LoadAllRecords();
-               
+
 
             }
             catch (Exception)
@@ -67,14 +67,14 @@ namespace CRUDWinForm_StoredProcedures
             }
         }
 
-        void LoadAllRecords ()
+        void LoadAllRecords()
         {
 
             SqlCommand com = new SqlCommand("exec dbo.SP_Product_View", con);
             SqlDataAdapter da = new SqlDataAdapter(com);
             DataTable dt = new DataTable();
             da.Fill(dt);
-           
+
             dataGridView1.DataSource = dt;
 
         }
@@ -82,6 +82,89 @@ namespace CRUDWinForm_StoredProcedures
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //this.dataGridView1.Sort(this.dataGridView1.Columns["ProductID"], ListSortDirection.Descending);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                con.Open();
+                string status = "";
+
+                if (rdoStatus.Checked == true)
+                {
+                    status = rdoStatus.Text;
+
+                }
+
+                else
+                {
+                    status = rdoRunning.Text;
+                }
+                SqlCommand com = new SqlCommand("exec dbo.SP_Product_Update '" + int.Parse(txtProductid.Text) + "', '" + txtitemname.Text + "', '" + cbocolor.Text + "', '" + status + "', '" + txtAddress.Text + "' ", con);
+
+                com.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Successfully Updated");
+                LoadAllRecords();
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtProductid.Text == "")
+                {
+                    MessageBox.Show("Enter Registration Number");
+                }
+
+
+                else if (MessageBox.Show("Are you confirm to delete", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    con.Open();
+
+                    SqlCommand com = new SqlCommand("exec dbo.SP_Product_Delete '" + int.Parse(txtProductid.Text) + "' ", con);
+
+                    com.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Records Deleted");
+                    LoadAllRecords();
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (txtProductid.Text == "")
+            {
+                MessageBox.Show("Enter Registration Number");
+            }
+
+            else
+            {
+
+                SqlCommand com = new SqlCommand("exec dbo.SP_Product_Search '" + int.Parse(txtProductid.Text)+ "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(com);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                dataGridView1.DataSource = dt;
+            }
         }
     }
 }

@@ -40,10 +40,12 @@
             this.rdoRunning = new System.Windows.Forms.RadioButton();
             this.btnInsert = new System.Windows.Forms.Button();
             this.grptransactions = new System.Windows.Forms.GroupBox();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnupdate = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.grptransactions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -165,6 +167,8 @@
             // 
             // grptransactions
             // 
+            this.grptransactions.Controls.Add(this.btnSearch);
+            this.grptransactions.Controls.Add(this.btndelete);
             this.grptransactions.Controls.Add(this.btnupdate);
             this.grptransactions.Controls.Add(this.txtAddress);
             this.grptransactions.Controls.Add(this.lblAddress);
@@ -185,6 +189,32 @@
             this.grptransactions.TabIndex = 9;
             this.grptransactions.TabStop = false;
             this.grptransactions.Text = "Transactions";
+            // 
+            // btndelete
+            // 
+            this.btndelete.BackColor = System.Drawing.Color.Red;
+            this.btndelete.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btndelete.ForeColor = System.Drawing.Color.White;
+            this.btndelete.Location = new System.Drawing.Point(486, 466);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(114, 45);
+            this.btndelete.TabIndex = 8;
+            this.btndelete.Text = "Delete";
+            this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.BackColor = System.Drawing.Color.Navy;
+            this.btnupdate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnupdate.ForeColor = System.Drawing.Color.White;
+            this.btnupdate.Location = new System.Drawing.Point(350, 466);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(114, 45);
+            this.btnupdate.TabIndex = 8;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtAddress
             // 
@@ -207,7 +237,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(92, 637);
+            this.dataGridView1.Location = new System.Drawing.Point(112, 549);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(756, 313);
@@ -215,18 +245,18 @@
             this.dataGridView1.Text = "dataGridView1";
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // btnupdate
+            // btnSearch
             // 
-            this.btnupdate.BackColor = System.Drawing.Color.Navy;
-            this.btnupdate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnupdate.ForeColor = System.Drawing.Color.White;
-            this.btnupdate.Location = new System.Drawing.Point(360, 466);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(114, 45);
-            this.btnupdate.TabIndex = 8;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = false;
-            this.btnupdate.Click += new System.EventHandler(this.btnInsert_Click);
+            this.btnSearch.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(558, 55);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(114, 45);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // Form1
             // 
@@ -264,6 +294,8 @@
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 
