@@ -79,10 +79,7 @@ namespace CRUDWinForm_StoredProcedures
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //this.dataGridView1.Sort(this.dataGridView1.Columns["ProductID"], ListSortDirection.Descending);
-        }
+       
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {

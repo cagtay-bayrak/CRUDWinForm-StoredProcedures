@@ -1,0 +1,15 @@
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\bin\Debug\netcoreapp3.1\FomDetails.exe
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\bin\Debug\netcoreapp3.1\FomDetails.deps.json
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\bin\Debug\netcoreapp3.1\FomDetails.runtimeconfig.json
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\bin\Debug\netcoreapp3.1\FomDetails.runtimeconfig.dev.json
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\bin\Debug\netcoreapp3.1\FomDetails.dll
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\bin\Debug\netcoreapp3.1\FomDetails.pdb
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.csprojAssemblyReference.cache
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.Form1.resources
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.csproj.GenerateResource.cache
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.AssemblyInfoInputs.cache
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.AssemblyInfo.cs
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.csproj.CoreCompileInputs.cache
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.dll
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.pdb
+C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.genruntimeconfig.cache
