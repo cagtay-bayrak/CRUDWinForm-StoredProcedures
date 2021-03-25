@@ -109,11 +109,55 @@ namespace SelectedGridCrud
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (StudentID > 0)
+            {
+                SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=CRUD_SP_DB;Integrated Security=True");
+                SqlCommand cmd = new SqlCommand("UPDATE Students SET Name=@Name, FatherName=@FatherName,RollNumber=@RollNumber,Address=@Address,Mobile=@Mobile WHERE StudentID = @ID", connection);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@Name", txtName.Text);
+                cmd.Parameters.AddWithValue("@FatherName", txtFatherName.Text);
+                cmd.Parameters.AddWithValue("@RollNumber", txtRollNumber.Text);
+                cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
+                cmd.Parameters.AddWithValue("@Mobile", txtMobile.Text);
+                cmd.Parameters.AddWithValue("@ID", this.StudentID);
+                connection.Open();
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("User Upadted", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GetStudentRecord();
+                clearForm();
+            }
 
+            else
+            {
+                MessageBox.Show("please select registration", "Select?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+
+            if (StudentID > 0)
+            {
+                SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=CRUD_SP_DB;Integrated Security=True");
+                SqlCommand cmd = new SqlCommand("DELETE FROM Students WHERE StudentID = @ID", connection);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@ID", this.StudentID);
+                connection.Open();
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("User deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GetStudentRecord();
+                clearForm();
+            }
+
+            else
+            {
+                MessageBox.Show("please select registration", "delete?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+
+
 
         }
 
@@ -126,11 +170,10 @@ namespace SelectedGridCrud
         private void clearForm()
         {
             txtName.Clear();
-            txtAddress.Clear();
             txtFatherName.Clear();
-            txtMobile.Clear();
             txtRollNumber.Clear();
-            txtName.Focus();
+            txtAddress.Clear();
+            txtMobile.Clear();
         }
 
 
@@ -138,7 +181,7 @@ namespace SelectedGridCrud
         public int StudentID;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            StudentID = Convert.ToInt32(dataGridView1.Rows[0].Cells[0].Value);
+            StudentID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value);
             txtName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             txtFatherName.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             txtRollNumber.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
