@@ -39,11 +39,11 @@
             this.lblRollNo = new System.Windows.Forms.Label();
             this.lblFname = new System.Windows.Forms.Label();
             this.lblMobile = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtRollNumber = new System.Windows.Forms.TextBox();
             this.txtFatherName = new System.Windows.Forms.TextBox();
             this.txtMobile = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 384);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(855, 293);
+            this.dataGridView1.Size = new System.Drawing.Size(806, 293);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.Text = "dataGridView1";
             // 
@@ -61,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(248, 22);
+            this.label1.Location = new System.Drawing.Point(305, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 30);
             this.label1.TabIndex = 1;
@@ -169,14 +169,6 @@
             this.lblMobile.TabIndex = 3;
             this.lblMobile.Text = "Mobile";
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(111, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 32);
-            this.textBox1.TabIndex = 4;
-            // 
             // txtRollNumber
             // 
             this.txtRollNumber.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -203,23 +195,31 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtAddress.Location = new System.Drawing.Point(111, 189);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(573, 94);
             this.txtAddress.TabIndex = 8;
             // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtName.Location = new System.Drawing.Point(111, 76);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(228, 32);
+            this.txtName.TabIndex = 9;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 694);
+            this.ClientSize = new System.Drawing.Size(822, 694);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtMobile);
             this.Controls.Add(this.txtFatherName);
             this.Controls.Add(this.txtRollNumber);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblMobile);
             this.Controls.Add(this.lblFname);
             this.Controls.Add(this.lblRollNo);
@@ -261,10 +261,10 @@
         private System.Windows.Forms.Label lblFname;
         private System.Windows.Forms.Label lblMobile;
         private System.Windows.Forms.TextBox txtStuddentName;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtRollNumber;
         private System.Windows.Forms.TextBox txtFatherName;
         private System.Windows.Forms.TextBox txtMobile;
         private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
