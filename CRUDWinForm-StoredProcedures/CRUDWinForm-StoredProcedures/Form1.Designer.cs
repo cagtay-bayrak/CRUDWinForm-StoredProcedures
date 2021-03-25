@@ -28,13 +28,222 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblheader = new System.Windows.Forms.Label();
+            this.lblProductID = new System.Windows.Forms.Label();
+            this.lblItemName = new System.Windows.Forms.Label();
+            this.lblColor = new System.Windows.Forms.Label();
+            this.lblCategory = new System.Windows.Forms.Label();
+            this.txtProductid = new System.Windows.Forms.TextBox();
+            this.txtitemname = new System.Windows.Forms.TextBox();
+            this.cbocolor = new System.Windows.Forms.ComboBox();
+            this.rdoStatus = new System.Windows.Forms.RadioButton();
+            this.rdoRunning = new System.Windows.Forms.RadioButton();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.grptransactions = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.grptransactions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblheader
+            // 
+            this.lblheader.AutoSize = true;
+            this.lblheader.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblheader.Location = new System.Drawing.Point(181, 20);
+            this.lblheader.Name = "lblheader";
+            this.lblheader.Size = new System.Drawing.Size(469, 37);
+            this.lblheader.TabIndex = 0;
+            this.lblheader.Text = "CRUD Operation-StoredProcedures";
+            // 
+            // lblProductID
+            // 
+            this.lblProductID.AutoSize = true;
+            this.lblProductID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblProductID.Location = new System.Drawing.Point(74, 71);
+            this.lblProductID.Name = "lblProductID";
+            this.lblProductID.Size = new System.Drawing.Size(91, 23);
+            this.lblProductID.TabIndex = 1;
+            this.lblProductID.Text = "ProductID";
+            // 
+            // lblItemName
+            // 
+            this.lblItemName.AutoSize = true;
+            this.lblItemName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblItemName.Location = new System.Drawing.Point(66, 133);
+            this.lblItemName.Name = "lblItemName";
+            this.lblItemName.Size = new System.Drawing.Size(99, 23);
+            this.lblItemName.TabIndex = 1;
+            this.lblItemName.Text = "Item Name";
+            // 
+            // lblColor
+            // 
+            this.lblColor.AutoSize = true;
+            this.lblColor.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblColor.Location = new System.Drawing.Point(112, 189);
+            this.lblColor.Name = "lblColor";
+            this.lblColor.Size = new System.Drawing.Size(53, 23);
+            this.lblColor.TabIndex = 1;
+            this.lblColor.Text = "Color";
+            // 
+            // lblCategory
+            // 
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCategory.Location = new System.Drawing.Point(81, 258);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(84, 23);
+            this.lblCategory.TabIndex = 1;
+            this.lblCategory.Text = "Category";
+            // 
+            // txtProductid
+            // 
+            this.txtProductid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtProductid.Location = new System.Drawing.Point(218, 62);
+            this.txtProductid.Name = "txtProductid";
+            this.txtProductid.Size = new System.Drawing.Size(323, 32);
+            this.txtProductid.TabIndex = 2;
+            // 
+            // txtitemname
+            // 
+            this.txtitemname.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtitemname.Location = new System.Drawing.Point(218, 124);
+            this.txtitemname.Name = "txtitemname";
+            this.txtitemname.Size = new System.Drawing.Size(323, 32);
+            this.txtitemname.TabIndex = 3;
+            // 
+            // cbocolor
+            // 
+            this.cbocolor.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbocolor.FormattingEnabled = true;
+            this.cbocolor.Items.AddRange(new object[] {
+            "Red",
+            "Yellow"});
+            this.cbocolor.Location = new System.Drawing.Point(218, 179);
+            this.cbocolor.Name = "cbocolor";
+            this.cbocolor.Size = new System.Drawing.Size(323, 33);
+            this.cbocolor.TabIndex = 4;
+            // 
+            // rdoStatus
+            // 
+            this.rdoStatus.AutoSize = true;
+            this.rdoStatus.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdoStatus.Location = new System.Drawing.Point(219, 237);
+            this.rdoStatus.Name = "rdoStatus";
+            this.rdoStatus.Size = new System.Drawing.Size(83, 29);
+            this.rdoStatus.TabIndex = 5;
+            this.rdoStatus.TabStop = true;
+            this.rdoStatus.Text = "Status";
+            this.rdoStatus.UseVisualStyleBackColor = true;
+            // 
+            // rdoRunning
+            // 
+            this.rdoRunning.AutoSize = true;
+            this.rdoRunning.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdoRunning.Location = new System.Drawing.Point(218, 272);
+            this.rdoRunning.Name = "rdoRunning";
+            this.rdoRunning.Size = new System.Drawing.Size(104, 29);
+            this.rdoRunning.TabIndex = 6;
+            this.rdoRunning.TabStop = true;
+            this.rdoRunning.Text = "Running";
+            this.rdoRunning.UseVisualStyleBackColor = true;
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(218, 466);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(114, 35);
+            this.btnInsert.TabIndex = 8;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
+            // grptransactions
+            // 
+            this.grptransactions.Controls.Add(this.txtAddress);
+            this.grptransactions.Controls.Add(this.lblAddress);
+            this.grptransactions.Controls.Add(this.dataGridView1);
+            this.grptransactions.Controls.Add(this.lblProductID);
+            this.grptransactions.Controls.Add(this.btnInsert);
+            this.grptransactions.Controls.Add(this.txtProductid);
+            this.grptransactions.Controls.Add(this.rdoRunning);
+            this.grptransactions.Controls.Add(this.txtitemname);
+            this.grptransactions.Controls.Add(this.rdoStatus);
+            this.grptransactions.Controls.Add(this.lblItemName);
+            this.grptransactions.Controls.Add(this.cbocolor);
+            this.grptransactions.Controls.Add(this.lblCategory);
+            this.grptransactions.Controls.Add(this.lblColor);
+            this.grptransactions.Location = new System.Drawing.Point(12, 74);
+            this.grptransactions.Name = "grptransactions";
+            this.grptransactions.Size = new System.Drawing.Size(895, 776);
+            this.grptransactions.TabIndex = 9;
+            this.grptransactions.TabStop = false;
+            this.grptransactions.Text = "İşlemler";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(23, 516);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(857, 188);
+            this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.Text = "dataGridView1";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Location = new System.Drawing.Point(92, 317);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(63, 25);
+            this.lblAddress.TabIndex = 10;
+            this.lblAddress.Text = "Adres";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(218, 330);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(323, 119);
+            this.txtAddress.TabIndex = 11;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(928, 810);
+            this.Controls.Add(this.grptransactions);
+            this.Controls.Add(this.lblheader);
+            this.Name = "Form1";
+            this.Text = "CRUD FORM";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.grptransactions.ResumeLayout(false);
+            this.grptransactions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblheader;
+        private System.Windows.Forms.Label lblProductID;
+        private System.Windows.Forms.Label lblItemName;
+        private System.Windows.Forms.Label lblColor;
+        private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.TextBox txtProductid;
+        private System.Windows.Forms.TextBox txtitemname;
+        private System.Windows.Forms.ComboBox cbocolor;
+        private System.Windows.Forms.RadioButton rdoStatus;
+        private System.Windows.Forms.RadioButton rdoRunning;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.GroupBox grptransactions;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox txtAddress;
     }
 }
 
