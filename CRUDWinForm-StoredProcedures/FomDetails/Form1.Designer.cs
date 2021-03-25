@@ -40,14 +40,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 91);
+            this.panel1.Size = new System.Drawing.Size(800, 204);
             this.panel1.TabIndex = 0;
             // 
             // button1
             // 
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(24, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 59);
+            this.button1.Size = new System.Drawing.Size(271, 66);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
