@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRegistration = new System.Windows.Forms.Button();
             this.btnInvoice = new System.Windows.Forms.Button();
+            this.btnRegistration = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,22 +45,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 121);
             this.panel1.TabIndex = 0;
-            // 
-            // btnRegistration
-            // 
-            this.btnRegistration.BackColor = System.Drawing.Color.Red;
-            this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistration.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRegistration.ForeColor = System.Drawing.Color.White;
-            this.btnRegistration.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistration.Image")));
-            this.btnRegistration.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistration.Location = new System.Drawing.Point(12, 12);
-            this.btnRegistration.Name = "btnRegistration";
-            this.btnRegistration.Size = new System.Drawing.Size(188, 82);
-            this.btnRegistration.TabIndex = 0;
-            this.btnRegistration.Text = "Registration";
-            this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistration.UseVisualStyleBackColor = false;
             // 
             // btnInvoice
             // 
@@ -77,6 +61,22 @@
             this.btnInvoice.Text = "Invoice";
             this.btnInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnInvoice.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistration
+            // 
+            this.btnRegistration.BackColor = System.Drawing.Color.Red;
+            this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistration.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRegistration.ForeColor = System.Drawing.Color.White;
+            this.btnRegistration.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistration.Image")));
+            this.btnRegistration.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistration.Location = new System.Drawing.Point(12, 12);
+            this.btnRegistration.Name = "btnRegistration";
+            this.btnRegistration.Size = new System.Drawing.Size(188, 82);
+            this.btnRegistration.TabIndex = 0;
+            this.btnRegistration.Text = "Registration";
+            this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistration.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
