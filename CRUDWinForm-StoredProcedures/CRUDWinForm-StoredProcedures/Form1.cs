@@ -16,6 +16,9 @@ namespace CRUDWinForm_StoredProcedures
         public Form1()
         {
             InitializeComponent();
+            LoadAllRecords();
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -35,7 +38,6 @@ namespace CRUDWinForm_StoredProcedures
             try
             {
 
-
                 con.Open();
                 string status = "";
 
@@ -49,11 +51,13 @@ namespace CRUDWinForm_StoredProcedures
                 {
                     status = rdoRunning.Text;
                 }
-                SqlCommand com = new SqlCommand("exec dbo.SP_Product_Insert '" + int.Parse(txtProductid.Text) + "', '" + txtitemname.Text + "', '" + cbocolor.Text + "', '" + txtAddress.Text + "', '" + status + "' ", con);
+                SqlCommand com = new SqlCommand("exec dbo.SP_Product_Insert '" + int.Parse(txtProductid.Text) + "', '" + txtitemname.Text + "', '" + cbocolor.Text + "', '" + status + "', '" + txtAddress.Text + "' ", con);
+               
                 com.ExecuteNonQuery();
-                MessageBox.Show("Successfully Saved");
-                
                 con.Close();
+                MessageBox.Show("Successfully Saved");
+                LoadAllRecords();
+               
 
             }
             catch (Exception)
@@ -63,7 +67,21 @@ namespace CRUDWinForm_StoredProcedures
             }
         }
 
+        void LoadAllRecords ()
+        {
 
-         
+            SqlCommand com = new SqlCommand("exec dbo.SP_Product_View", con);
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+           
+            dataGridView1.DataSource = dt;
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //this.dataGridView1.Sort(this.dataGridView1.Columns["ProductID"], ListSortDirection.Descending);
+        }
     }
 }

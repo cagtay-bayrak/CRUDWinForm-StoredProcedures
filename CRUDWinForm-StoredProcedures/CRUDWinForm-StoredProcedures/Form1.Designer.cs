@@ -40,9 +40,10 @@
             this.rdoRunning = new System.Windows.Forms.RadioButton();
             this.btnInsert = new System.Windows.Forms.Button();
             this.grptransactions = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblAddress = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnupdate = new System.Windows.Forms.Button();
             this.grptransactions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -151,16 +152,20 @@
             // 
             // btnInsert
             // 
+            this.btnInsert.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInsert.ForeColor = System.Drawing.Color.White;
             this.btnInsert.Location = new System.Drawing.Point(218, 466);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(114, 35);
+            this.btnInsert.Size = new System.Drawing.Size(114, 45);
             this.btnInsert.TabIndex = 8;
             this.btnInsert.Text = "Insert";
-            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.UseVisualStyleBackColor = false;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // grptransactions
             // 
+            this.grptransactions.Controls.Add(this.btnupdate);
             this.grptransactions.Controls.Add(this.txtAddress);
             this.grptransactions.Controls.Add(this.lblAddress);
             this.grptransactions.Controls.Add(this.dataGridView1);
@@ -176,20 +181,18 @@
             this.grptransactions.Controls.Add(this.lblColor);
             this.grptransactions.Location = new System.Drawing.Point(12, 74);
             this.grptransactions.Name = "grptransactions";
-            this.grptransactions.Size = new System.Drawing.Size(895, 776);
+            this.grptransactions.Size = new System.Drawing.Size(895, 956);
             this.grptransactions.TabIndex = 9;
             this.grptransactions.TabStop = false;
-            this.grptransactions.Text = "İşlemler";
+            this.grptransactions.Text = "Transactions";
             // 
-            // dataGridView1
+            // txtAddress
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 516);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(857, 188);
-            this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.Text = "dataGridView1";
+            this.txtAddress.Location = new System.Drawing.Point(218, 330);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(471, 119);
+            this.txtAddress.TabIndex = 11;
             // 
             // lblAddress
             // 
@@ -201,19 +204,35 @@
             this.lblAddress.TabIndex = 10;
             this.lblAddress.Text = "Adres";
             // 
-            // txtAddress
+            // dataGridView1
             // 
-            this.txtAddress.Location = new System.Drawing.Point(218, 330);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(323, 119);
-            this.txtAddress.TabIndex = 11;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(92, 637);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(756, 313);
+            this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.Text = "dataGridView1";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.BackColor = System.Drawing.Color.Navy;
+            this.btnupdate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnupdate.ForeColor = System.Drawing.Color.White;
+            this.btnupdate.Location = new System.Drawing.Point(360, 466);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(114, 45);
+            this.btnupdate.TabIndex = 8;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 810);
+            this.ClientSize = new System.Drawing.Size(928, 1055);
             this.Controls.Add(this.grptransactions);
             this.Controls.Add(this.lblheader);
             this.Name = "Form1";
@@ -244,6 +263,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Button btnupdate;
     }
 }
 
