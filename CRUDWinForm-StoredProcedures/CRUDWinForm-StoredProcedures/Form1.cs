@@ -158,7 +158,7 @@ namespace CRUDWinForm_StoredProcedures
             else
             {
 
-                SqlCommand com = new SqlCommand("exec dbo.SP_Product_Search '" + int.Parse(txtProductid.Text)+ "'", con);
+                SqlCommand com = new SqlCommand("exec dbo.SP_Product_Search '" + int.Parse(txtProductid.Text) + "'", con);
                 SqlDataAdapter da = new SqlDataAdapter(com);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
