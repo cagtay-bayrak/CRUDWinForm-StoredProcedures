@@ -31,5 +31,25 @@ namespace FomDetails
         {
 
         }
+
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSale_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
