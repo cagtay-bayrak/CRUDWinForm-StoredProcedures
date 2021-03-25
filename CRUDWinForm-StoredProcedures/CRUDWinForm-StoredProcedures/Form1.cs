@@ -166,5 +166,10 @@ namespace CRUDWinForm_StoredProcedures
                 dataGridView1.DataSource = dt;
             }
         }
+
+        private void grptransactions_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
