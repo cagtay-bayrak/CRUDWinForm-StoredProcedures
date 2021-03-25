@@ -20,7 +20,6 @@ C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\SelectedGrid
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\SelectedGridCrud\obj\Debug\netcoreapp3.1\SelectedGridCrud.csproj.CopyComplete
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\SelectedGridCrud\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\SelectedGridCrud\obj\Debug\netcoreapp3.1\SelectedGridCrud.Form2.resources
-C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\SelectedGridCrud\obj\Debug\netcoreapp3.1\SelectedGridCrud.csprojAssemblyReference.cache
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\SelectedGridCrud\bin\Debug\netcoreapp3.1\Microsoft.Office.Interop.Excel.dll
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\SelectedGridCrud\obj\Debug\netcoreapp3.1\SelectedGridCrud.csproj.ResolveComReference.cache
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\SelectedGridCrud\obj\Debug\netcoreapp3.1\SelectedGridCrud.csproj.CoreCompileInputs.cache
