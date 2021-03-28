@@ -28,129 +28,183 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtname = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblFname = new System.Windows.Forms.Label();
             this.txtfname = new System.Windows.Forms.TextBox();
+            this.lblDesign = new System.Windows.Forms.Label();
+            this.txtDesign = new System.Windows.Forms.TextBox();
+            this.lbleMail = new System.Windows.Forms.Label();
+            this.txteMail = new System.Windows.Forms.TextBox();
+            this.lblID = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.rdoMale = new System.Windows.Forms.RadioButton();
+            this.rdoFemale = new System.Windows.Forms.RadioButton();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // lblName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(8, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblName.Location = new System.Drawing.Point(8, 80);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(62, 25);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name";
             // 
-            // label3
+            // txtName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(241, 438);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Name";
+            this.txtName.Location = new System.Drawing.Point(83, 80);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(227, 34);
+            this.txtName.TabIndex = 1;
             // 
-            // label4
+            // lblFname
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(241, 404);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 25);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Name";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(241, 366);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 25);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Name";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(241, 333);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 25);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Name";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(241, 302);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 25);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Name";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(257, 499);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 25);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Name";
-            // 
-            // txtname
-            // 
-            this.txtname.Location = new System.Drawing.Point(76, 80);
-            this.txtname.Multiline = true;
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(227, 34);
-            this.txtname.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(333, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "F.Name";
+            this.lblFname.AutoSize = true;
+            this.lblFname.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFname.Location = new System.Drawing.Point(341, 80);
+            this.lblFname.Name = "lblFname";
+            this.lblFname.Size = new System.Drawing.Size(75, 25);
+            this.lblFname.TabIndex = 0;
+            this.lblFname.Text = "F.Name";
             // 
             // txtfname
             // 
-            this.txtfname.Location = new System.Drawing.Point(414, 80);
+            this.txtfname.Location = new System.Drawing.Point(433, 80);
             this.txtfname.Multiline = true;
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(227, 34);
             this.txtfname.TabIndex = 1;
+            // 
+            // lblDesign
+            // 
+            this.lblDesign.AutoSize = true;
+            this.lblDesign.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDesign.Location = new System.Drawing.Point(8, 141);
+            this.lblDesign.Name = "lblDesign";
+            this.lblDesign.Size = new System.Drawing.Size(69, 25);
+            this.lblDesign.TabIndex = 0;
+            this.lblDesign.Text = "Dizayn";
+            // 
+            // txtDesign
+            // 
+            this.txtDesign.Location = new System.Drawing.Point(83, 141);
+            this.txtDesign.Multiline = true;
+            this.txtDesign.Name = "txtDesign";
+            this.txtDesign.Size = new System.Drawing.Size(227, 34);
+            this.txtDesign.TabIndex = 1;
+            // 
+            // lbleMail
+            // 
+            this.lbleMail.AutoSize = true;
+            this.lbleMail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbleMail.Location = new System.Drawing.Point(348, 140);
+            this.lbleMail.Name = "lbleMail";
+            this.lbleMail.Size = new System.Drawing.Size(67, 25);
+            this.lbleMail.TabIndex = 0;
+            this.lbleMail.Text = "e-Mail";
+            // 
+            // txteMail
+            // 
+            this.txteMail.Location = new System.Drawing.Point(433, 132);
+            this.txteMail.Multiline = true;
+            this.txteMail.Name = "txteMail";
+            this.txteMail.Size = new System.Drawing.Size(227, 34);
+            this.txteMail.TabIndex = 1;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblID.Location = new System.Drawing.Point(40, 209);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(30, 25);
+            this.lblID.TabIndex = 0;
+            this.lblID.Text = "ID";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(83, 200);
+            this.txtID.Multiline = true;
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(227, 34);
+            this.txtID.TabIndex = 1;
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGender.Location = new System.Drawing.Point(341, 199);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(74, 25);
+            this.lblGender.TabIndex = 0;
+            this.lblGender.Text = "Gender";
+            // 
+            // rdoMale
+            // 
+            this.rdoMale.AutoSize = true;
+            this.rdoMale.Location = new System.Drawing.Point(433, 200);
+            this.rdoMale.Name = "rdoMale";
+            this.rdoMale.Size = new System.Drawing.Size(63, 24);
+            this.rdoMale.TabIndex = 2;
+            this.rdoMale.TabStop = true;
+            this.rdoMale.Text = "Male";
+            this.rdoMale.UseVisualStyleBackColor = true;
+            // 
+            // rdoFemale
+            // 
+            this.rdoFemale.AutoSize = true;
+            this.rdoFemale.Location = new System.Drawing.Point(517, 200);
+            this.rdoFemale.Name = "rdoFemale";
+            this.rdoFemale.Size = new System.Drawing.Size(78, 24);
+            this.rdoFemale.TabIndex = 2;
+            this.rdoFemale.TabStop = true;
+            this.rdoFemale.Text = "Female";
+            this.rdoFemale.UseVisualStyleBackColor = true;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Location = new System.Drawing.Point(-2, 269);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(79, 25);
+            this.lblAddress.TabIndex = 0;
+            this.lblAddress.Text = "Address";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(83, 252);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(577, 76);
+            this.txtAddress.TabIndex = 1;
             // 
             // RegistrationForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1041, 525);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.rdoFemale);
+            this.Controls.Add(this.rdoMale);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.txteMail);
+            this.Controls.Add(this.lbleMail);
+            this.Controls.Add(this.txtDesign);
+            this.Controls.Add(this.lblDesign);
             this.Controls.Add(this.txtfname);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtname);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFname);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.lblName);
             this.Name = "RegistrationForms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrationForms";
@@ -162,17 +216,32 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblNme;
         
         private System.Windows.Forms.Label label2;
  
-        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblFname;
+        private System.Windows.Forms.Label lblDesign;
+        private System.Windows.Forms.Label lbleMail;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.TextBox txtfname;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtDesign;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txteMail;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton rdoMale;
+        private System.Windows.Forms.RadioButton rdoFemale;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
