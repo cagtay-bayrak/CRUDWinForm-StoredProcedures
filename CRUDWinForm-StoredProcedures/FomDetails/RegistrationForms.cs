@@ -11,8 +11,8 @@ namespace FomDetails
     public partial class RegistrationForms : Form
     {
 
-        string path = "Data Source=.;Initial Catalog=CRUD_SP_DB;Integrated Security=True";
-
+        string path = @"Data Source=.;Initial Catalog=CRUD_SP_DB;Integrated Security=True";
+        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=CRUD_SP_DB;Integrated Security=True");
 
         public RegistrationForms()
         {
