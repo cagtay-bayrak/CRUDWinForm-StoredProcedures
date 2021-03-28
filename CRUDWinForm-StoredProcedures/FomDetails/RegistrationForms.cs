@@ -14,5 +14,10 @@ namespace FomDetails
         {
             InitializeComponent();
         }
+
+        private void RegistrationForms_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
