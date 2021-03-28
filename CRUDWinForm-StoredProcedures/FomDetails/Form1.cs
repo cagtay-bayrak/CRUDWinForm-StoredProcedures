@@ -19,7 +19,8 @@ namespace FomDetails
 
         private void btnRegistration_Click(object sender, EventArgs e)
         {
-
+            RegistrationForms rg = new RegistrationForms();
+            rg.Show();
         }
 
         private void btnInvoice_Click(object sender, EventArgs e)
