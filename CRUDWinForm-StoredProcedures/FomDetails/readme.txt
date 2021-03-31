@@ -1,4 +1,7 @@
-﻿create db CRUD_SP_DB;
+﻿https://www.youtube.com/watch?v=zfz49gjnjcY&t=4898s
+
+
+create db CRUD_SP_DB;
 
 create table Employee
 (
