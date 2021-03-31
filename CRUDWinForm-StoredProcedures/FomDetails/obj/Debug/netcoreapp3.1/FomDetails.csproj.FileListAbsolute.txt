@@ -11,7 +11,6 @@ C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\o
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.dll
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.pdb
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.genruntimeconfig.cache
-C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.csprojAssemblyReference.cache
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.Properties.Resources.resources
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.RegistrationForms.resources
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
