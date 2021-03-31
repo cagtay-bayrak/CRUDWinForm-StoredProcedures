@@ -190,7 +190,25 @@ namespace FomDetails
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            try
+            if (txtSearch.Text != "")
+            {
+                try
+                {
+                    con.Open();
+                    adp = new SqlDataAdapter("select * from Employee where Name like '%" + txtSearch.Text + "%' or Fname like '%" + txtSearch.Text + "%' or eMail like '%" + txtSearch.Text + "%'", con);
+                    dt = new System.Data.DataTable();
+                    adp.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+            else
             {
                 con.Open();
                 adp = new SqlDataAdapter("select * from Employee where Name like '%" + txtSearch.Text + "%' or Fname like '%" + txtSearch.Text + "%' or eMail like '%" + txtSearch.Text + "%'", con);
@@ -198,12 +216,14 @@ namespace FomDetails
                 adp.Fill(dt);
                 dataGridView1.DataSource = dt;
                 con.Close();
-            }
-            catch (Exception ex)
-            {
 
-                MessageBox.Show(ex.Message);
             }
+
+
+
+
+
+
         }
 
         private void btnExport_Click(object sender, EventArgs e)

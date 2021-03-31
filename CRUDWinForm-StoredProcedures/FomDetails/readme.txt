@@ -33,6 +33,26 @@ INSERT INTO [dbo].[Employee]
          'Male',
 		 'bayrampaşa')
  
+-----------------------------------------------------------------------------------------------------------------------
+ create table Login 
+(
+UserID int primary key identity(1,1),
+UserName nvarchar(50),
+UserPassword nvarchar(50)
+)
+-----------------------------------------------------------------------------------------------------------------------
+USE [CRUD_SP_DB]
+GO
+
+INSERT INTO [dbo].[Login]
+           ([UserName]
+           ,[UserPassword])
+     VALUES
+           ('cagtay.bayrak',
+           '12345'
+		   )
+ 
+
 
 
 
