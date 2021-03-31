@@ -24,5 +24,4 @@ C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\o
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.csproj.ResolveComReference.cache
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\bin\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll
-C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.csprojAssemblyReference.cache
 C:\Githup\CRUDWinForm-StoredProcedures\CRUDWinForm-StoredProcedures\FomDetails\obj\Debug\netcoreapp3.1\FomDetails.Login.resources
