@@ -90,7 +90,7 @@
             this.txtfname.Multiline = true;
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(227, 34);
-            this.txtfname.TabIndex = 1;
+            this.txtfname.TabIndex = 2;
             // 
             // lblDesign
             // 
@@ -108,7 +108,7 @@
             this.txtDesign.Multiline = true;
             this.txtDesign.Name = "txtDesign";
             this.txtDesign.Size = new System.Drawing.Size(227, 34);
-            this.txtDesign.TabIndex = 1;
+            this.txtDesign.TabIndex = 3;
             // 
             // lbleMail
             // 
@@ -126,7 +126,7 @@
             this.txteMail.Multiline = true;
             this.txteMail.Name = "txteMail";
             this.txteMail.Size = new System.Drawing.Size(227, 34);
-            this.txteMail.TabIndex = 1;
+            this.txteMail.TabIndex = 4;
             // 
             // lblID
             // 
@@ -144,7 +144,7 @@
             this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(227, 34);
-            this.txtID.TabIndex = 1;
+            this.txtID.TabIndex = 5;
             // 
             // lblGender
             // 

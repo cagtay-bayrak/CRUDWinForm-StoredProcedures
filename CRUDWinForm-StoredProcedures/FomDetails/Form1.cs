@@ -57,7 +57,11 @@ namespace FomDetails
 
         private void menuStrip1_ItemClicked_2(object sender, ToolStripItemClickedEventArgs e)
         {
-            Environment.Exit(0);
+
+            Login fm = new Login();
+            this.Hide();
+            fm.Show();
+            //Environment.Exit(0);
         }
     }
 }

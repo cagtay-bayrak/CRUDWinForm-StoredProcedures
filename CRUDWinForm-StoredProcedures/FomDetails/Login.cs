@@ -20,42 +20,44 @@ namespace FomDetails
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            if (txtUserName.Text == "" || txtPassw.Text == "")
+            {
+                MessageBox.Show("Please provide UserName and Password");
+                return;
+            }
             try
             {
-                if (txtUserName.Text == "" && txtPassword.Text == "")
-                {
-                    MessageBox.Show("Please enter user Name and Password");
-                }
+                //Create SqlConnection
 
+                SqlCommand cmd = new SqlCommand("select * from Login where UserName=@Name and UserPassword=@Passw", con);
+                cmd.Parameters.AddWithValue("@Name", txtUserName.Text);
+                cmd.Parameters.AddWithValue("@Passw", txtPassw.Text);
+                con.Open();
+                SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adapt.Fill(ds);
+                con.Close();
+                int count = ds.Tables[0].Rows.Count;
+                //If count is equal to 1, than show frmMain form
+                if (count == 1)
+                {
+                    //MessageBox.Show("Login Successful!");
+                  
+                    Form1 fm = new Form1();
+                    this.Hide();
+                    fm.Show();
+                }
                 else
                 {
-                    SqlCommand cmd = new SqlCommand("select * from Login where UserName=@Name and UserPassword=@Passw", con);
-                    cmd.Parameters.Add("@Name", txtUserName.Text);
-                    cmd.Parameters.Add("@UserPassword", txtPassword.Text);
-
-                    SqlDataAdapter adp = new SqlDataAdapter(cmd);
-                    DataSet ds = new DataSet();
-                    adp.Fill(ds);
-
-                    int count = ds.Tables[0].Rows.Count;
-
-                    if (count > 0)
-                    {
-                        MessageBox.Show("Logged In");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please enter user Name and Password");
-
-                    }
+                    MessageBox.Show("Login Failed!");
                 }
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
-
         }
+
     }
 }
