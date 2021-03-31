@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
 
 namespace FomDetails
 {
@@ -16,7 +17,9 @@ namespace FomDetails
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter adp;
-        DataTable dt;
+        System.Data.DataTable dt;
+
+        //excel yok ise   DataTable dt;
         int ID;
 
 
@@ -148,7 +151,7 @@ namespace FomDetails
         {
             try
             {
-                dt = new DataTable();
+                dt = new System.Data.DataTable();
                 con.Open();
                 adp = new SqlDataAdapter("select * from Employee", con);
                 adp.Fill(dt);
@@ -191,7 +194,7 @@ namespace FomDetails
             {
                 con.Open();
                 adp = new SqlDataAdapter("select * from Employee where Name like '%" + txtSearch.Text + "%' or Fname like '%" + txtSearch.Text + "%' or eMail like '%" + txtSearch.Text + "%'", con);
-                dt = new DataTable();
+                dt = new System.Data.DataTable();
                 adp.Fill(dt);
                 dataGridView1.DataSource = dt;
                 con.Close();
@@ -205,7 +208,39 @@ namespace FomDetails
 
         private void btnExport_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Microsoft.Office.Interop.Excel.Application Excell = new Microsoft.Office.Interop.Excel.Application();
+                Workbook wb = Excell.Workbooks.Add(XlSheetType.xlWorksheet);
+                Worksheet ws = (Worksheet)Excell.ActiveSheet;
+                Excell.Visible = true;
 
+                for (int j = 2; j < dataGridView1.Rows.Count; j++)
+                {
+                    for (int i = 1; i <= 1; i++)
+                    {
+                        ws.Cells[j, i] = dataGridView1.Rows[j - 2].Cells[i - 1].Value;
+                    }
+                }
+
+                for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
+                {
+                    ws.Cells[1, i] = dataGridView1.Columns[i - 1].HeaderText;
+                }
+
+                for (int i = 0; i < dataGridView1.Columns.Count - 1; i++)
+                {
+                    for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                    {
+                        ws.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
