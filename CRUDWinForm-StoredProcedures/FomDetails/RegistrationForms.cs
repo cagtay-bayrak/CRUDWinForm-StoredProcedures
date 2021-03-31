@@ -84,7 +84,31 @@ namespace FomDetails
 
         private void bunUpdate_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string Gender;
+                if (rdoMale.Checked)
+                {
+                    Gender = "Male";
+                }
+                else
+                {
+                    Gender = "Female";
+                }
 
+
+                con.Open();
+                cmd = new SqlCommand("update Employee set Name ='" + txtName.Text + "', Fname ='" + txtfname.Text + "', Design ='" + txtDesign.Text + "', eMail ='" + txteMail.Text + "', Emp_ID ='" + txtID.Text + "',Gender ='" + Gender + "', Address ='" + txtAddress.Text + "' where EmployeeID = '"+ID+"' ",con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("User Updated", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                display();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
