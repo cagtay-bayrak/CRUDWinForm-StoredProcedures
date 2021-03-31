@@ -12,7 +12,6 @@ namespace FomDetails
     public partial class RegistrationForms : Form
     {
 
-
         string path = @"Data Source=.;Initial Catalog=CRUD_SP_DB;Integrated Security=True";
         SqlConnection con;
         SqlCommand cmd;
@@ -26,6 +25,8 @@ namespace FomDetails
             InitializeComponent();
             con = new SqlConnection(path);
             display();
+            btnDelete.Enabled = false;
+            bunUpdate.Enabled = false;
         }
 
         private void RegistrationForms_Load(object sender, EventArgs e)
@@ -98,7 +99,7 @@ namespace FomDetails
 
 
                 con.Open();
-                cmd = new SqlCommand("update Employee set Name ='" + txtName.Text + "', Fname ='" + txtfname.Text + "', Design ='" + txtDesign.Text + "', eMail ='" + txteMail.Text + "', Emp_ID ='" + txtID.Text + "',Gender ='" + Gender + "', Address ='" + txtAddress.Text + "' where EmployeeID = '"+ID+"' ",con);
+                cmd = new SqlCommand("update Employee set Name ='" + txtName.Text + "', Fname ='" + txtfname.Text + "', Design ='" + txtDesign.Text + "', eMail ='" + txteMail.Text + "', Emp_ID ='" + txtID.Text + "',Gender ='" + Gender + "', Address ='" + txtAddress.Text + "' where EmployeeID = '" + ID + "' ", con);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("User Updated", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -113,7 +114,22 @@ namespace FomDetails
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand("delete from Employee where EmployeeID ='" + ID + "'", con);
+                cmd.ExecuteNonQuery();
 
+                con.Close();
+                MessageBox.Show("User Deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                display();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void Clear()
@@ -124,6 +140,7 @@ namespace FomDetails
             txteMail.Clear();
             txtID.Clear();
             txtAddress.Clear();
+
 
         }
 
@@ -149,8 +166,8 @@ namespace FomDetails
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             ID = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-            txtfname.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtName.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtfname.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtDesign.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             txteMail.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtID.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
@@ -163,6 +180,32 @@ namespace FomDetails
                 rdoFemale.Checked = true;
             }
             txtAddress.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+            btnDelete.Enabled = true;
+            bunUpdate.Enabled = true;
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                adp = new SqlDataAdapter("select * from Employee where Name like '%" + txtSearch.Text + "%' or Fname like '%" + txtSearch.Text + "%' or eMail like '%" + txtSearch.Text + "%'", con);
+                dt = new DataTable();
+                adp.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
