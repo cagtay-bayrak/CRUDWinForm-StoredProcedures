@@ -51,16 +51,26 @@ namespace FomDetails
                     {
                         Gender = "Female";
                     }
+
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Employee VALUES (@Name,@Fname,@Design,@eMail,@Emp_ID,@Gender,@Address)", con);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@Name", txtName.Text);
+                    cmd.Parameters.AddWithValue("@Fname", txtfname.Text);
+                    cmd.Parameters.AddWithValue("@Design", txtDesign.Text);
+                    cmd.Parameters.AddWithValue("@eMail", txteMail.Text);
+                    cmd.Parameters.AddWithValue("@Emp_ID", txtID.Text);
+                    cmd.Parameters.AddWithValue("@Gender", Gender);
+                    cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
                     con.Open();
-                    cmd = new SqlCommand("insert into Employee (Name,Fname,Design,eMail,Emp_ID,Gender,Address) values ('" + txtName.Text + "','" + txtfname.Text + "','" + txtDesign.Text + "''" + txteMail.Text + "''" + txtID.Text + "''" + Gender + "''" + txtAddress.Text + "')", con);
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show("You Data has saved");
+                    MessageBox.Show("new user added", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Clear();
                 }
                 catch (Exception ex)
                 {
 
-                    //MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message);
                 }
 
 
@@ -74,6 +84,17 @@ namespace FomDetails
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+
+        }
+
+        public void Clear()
+        {
+            txtName.Clear();
+            txtfname.Clear();
+            txtDesign.Clear();
+            txteMail.Clear();
+            txtID.Clear();
+            txtAddress.Clear();
 
         }
     }
