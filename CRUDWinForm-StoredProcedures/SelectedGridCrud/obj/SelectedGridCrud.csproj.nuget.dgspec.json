@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\SelectedGridCrud.csproj": {}
+    "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\SelectedGridCrud.csproj": {}
   },
   "projects": {
-    "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\SelectedGridCrud.csproj": {
+    "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\SelectedGridCrud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\SelectedGridCrud.csproj",
+        "projectUniqueName": "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\SelectedGridCrud.csproj",
         "projectName": "SelectedGridCrud",
-        "projectPath": "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\SelectedGridCrud.csproj",
+        "projectPath": "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\SelectedGridCrud.csproj",
         "packagesPath": "C:\\Users\\cagtay.bayrak\\.nuget\\packages\\",
-        "outputPath": "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\obj\\",
+        "outputPath": "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\SelectedGridCrud\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cagtay.bayrak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "DocumentFormat.OpenXml": {
               "target": "Package",
@@ -69,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

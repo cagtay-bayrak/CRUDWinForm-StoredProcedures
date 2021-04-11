@@ -1,0 +1,15 @@
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\bin\Debug\netcoreapp3.1\FormDeshboard.exe
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\bin\Debug\netcoreapp3.1\FormDeshboard.deps.json
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\bin\Debug\netcoreapp3.1\FormDeshboard.runtimeconfig.json
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\bin\Debug\netcoreapp3.1\FormDeshboard.runtimeconfig.dev.json
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\bin\Debug\netcoreapp3.1\FormDeshboard.dll
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\bin\Debug\netcoreapp3.1\FormDeshboard.pdb
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.csprojAssemblyReference.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.Form1.resources
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.csproj.GenerateResource.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.AssemblyInfoInputs.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.AssemblyInfo.cs
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.csproj.CoreCompileInputs.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.dll
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.pdb
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\FormDeshboard\obj\Debug\netcoreapp3.1\FormDeshboard.genruntimeconfig.cache

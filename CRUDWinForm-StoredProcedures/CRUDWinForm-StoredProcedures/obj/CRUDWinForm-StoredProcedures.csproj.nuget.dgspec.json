@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures.csproj": {}
+    "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures.csproj": {}
   },
   "projects": {
-    "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures.csproj": {
+    "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures.csproj",
+        "projectUniqueName": "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures.csproj",
         "projectName": "CRUDWinForm-StoredProcedures",
-        "projectPath": "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures.csproj",
+        "projectPath": "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures.csproj",
         "packagesPath": "C:\\Users\\cagtay.bayrak\\.nuget\\packages\\",
-        "outputPath": "C:\\Githup\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\obj\\",
+        "outputPath": "C:\\GitHub\\CRUDWinForm\\CRUDWinForm-StoredProcedures\\CRUDWinForm-StoredProcedures\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cagtay.bayrak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "System.Data.SqlClient": {
               "target": "Package",
@@ -61,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

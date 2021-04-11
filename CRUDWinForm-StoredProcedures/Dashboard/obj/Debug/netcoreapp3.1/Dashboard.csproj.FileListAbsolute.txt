@@ -1,0 +1,16 @@
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\bin\Debug\netcoreapp3.1\Dashboard.exe
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\bin\Debug\netcoreapp3.1\Dashboard.deps.json
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\bin\Debug\netcoreapp3.1\Dashboard.runtimeconfig.json
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\bin\Debug\netcoreapp3.1\Dashboard.runtimeconfig.dev.json
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\bin\Debug\netcoreapp3.1\Dashboard.dll
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\bin\Debug\netcoreapp3.1\Dashboard.pdb
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.csprojAssemblyReference.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.Form1.resources
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.csproj.GenerateResource.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.AssemblyInfoInputs.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.AssemblyInfo.cs
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.csproj.CoreCompileInputs.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.dll
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.pdb
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.genruntimeconfig.cache
+C:\GitHub\CRUDWinForm\CRUDWinForm-StoredProcedures\Dashboard\obj\Debug\netcoreapp3.1\Dashboard.Properties.Resources.resources
