@@ -36,6 +36,9 @@ namespace Dashboard
             this.button1 = new System.Windows.Forms.Button();
             this.lbladmin = new System.Windows.Forms.Label();
             this.pnlManu = new System.Windows.Forms.Panel();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.pictureBoxAdmin = new System.Windows.Forms.PictureBox();
             this.btnChart = new System.Windows.Forms.Button();
             this.pictureBoxchart = new System.Windows.Forms.PictureBox();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -43,13 +46,14 @@ namespace Dashboard
             this.pnlHomeDashboard = new System.Windows.Forms.Panel();
             this.lblDashbordHome = new System.Windows.Forms.Label();
             this.lblDashboard = new System.Windows.Forms.Label();
-            this.pictureBoxTables = new System.Windows.Forms.PictureBox();
+            this.pictureBoxReport = new System.Windows.Forms.PictureBox();
             this.pnlUserMail.SuspendLayout();
             this.pnlManu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxchart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).BeginInit();
             this.pnlHomeDashboard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTables)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReport)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlUserMail
@@ -117,7 +121,10 @@ namespace Dashboard
             // pnlManu
             // 
             this.pnlManu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.pnlManu.Controls.Add(this.pictureBoxTables);
+            this.pnlManu.Controls.Add(this.pictureBoxReport);
+            this.pnlManu.Controls.Add(this.btnReport);
+            this.pnlManu.Controls.Add(this.btnAdmin);
+            this.pnlManu.Controls.Add(this.pictureBoxAdmin);
             this.pnlManu.Controls.Add(this.btnChart);
             this.pnlManu.Controls.Add(this.pictureBoxchart);
             this.pnlManu.Controls.Add(this.btnDashboard);
@@ -125,8 +132,50 @@ namespace Dashboard
             this.pnlManu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlManu.Location = new System.Drawing.Point(0, 53);
             this.pnlManu.Name = "pnlManu";
-            this.pnlManu.Size = new System.Drawing.Size(202, 529);
+            this.pnlManu.Size = new System.Drawing.Size(211, 529);
             this.pnlManu.TabIndex = 1;
+            // 
+            // btnReport
+            // 
+            this.btnReport.AutoSize = true;
+            this.btnReport.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReport.BackgroundImage")));
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReport.ForeColor = System.Drawing.Color.White;
+            this.btnReport.Location = new System.Drawing.Point(56, 186);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(120, 35);
+            this.btnReport.TabIndex = 7;
+            this.btnReport.Text = "Report";
+            this.btnReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReport.UseVisualStyleBackColor = true;
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdmin.BackgroundImage")));
+            this.btnAdmin.FlatAppearance.BorderSize = 0;
+            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Location = new System.Drawing.Point(56, 124);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(131, 35);
+            this.btnAdmin.TabIndex = 5;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmin.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxAdmin
+            // 
+            this.pictureBoxAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAdmin.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdmin.Image")));
+            this.pictureBoxAdmin.Location = new System.Drawing.Point(12, 124);
+            this.pictureBoxAdmin.Name = "pictureBoxAdmin";
+            this.pictureBoxAdmin.Size = new System.Drawing.Size(47, 43);
+            this.pictureBoxAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxAdmin.TabIndex = 4;
+            this.pictureBoxAdmin.TabStop = false;
             // 
             // btnChart
             // 
@@ -186,9 +235,9 @@ namespace Dashboard
             this.pnlHomeDashboard.Controls.Add(this.lblDashbordHome);
             this.pnlHomeDashboard.Controls.Add(this.lblDashboard);
             this.pnlHomeDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHomeDashboard.Location = new System.Drawing.Point(202, 53);
+            this.pnlHomeDashboard.Location = new System.Drawing.Point(211, 53);
             this.pnlHomeDashboard.Name = "pnlHomeDashboard";
-            this.pnlHomeDashboard.Size = new System.Drawing.Size(779, 42);
+            this.pnlHomeDashboard.Size = new System.Drawing.Size(770, 42);
             this.pnlHomeDashboard.TabIndex = 2;
             // 
             // lblDashbordHome
@@ -211,16 +260,16 @@ namespace Dashboard
             this.lblDashboard.TabIndex = 0;
             this.lblDashboard.Text = "Dashboard";
             // 
-            // pictureBoxTables
+            // pictureBoxReport
             // 
-            this.pictureBoxTables.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxTables.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTables.Image")));
-            this.pictureBoxTables.Location = new System.Drawing.Point(12, 124);
-            this.pictureBoxTables.Name = "pictureBoxTables";
-            this.pictureBoxTables.Size = new System.Drawing.Size(47, 47);
-            this.pictureBoxTables.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxTables.TabIndex = 4;
-            this.pictureBoxTables.TabStop = false;
+            this.pictureBoxReport.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxReport.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReport.Image")));
+            this.pictureBoxReport.Location = new System.Drawing.Point(12, 174);
+            this.pictureBoxReport.Name = "pictureBoxReport";
+            this.pictureBoxReport.Size = new System.Drawing.Size(47, 47);
+            this.pictureBoxReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxReport.TabIndex = 8;
+            this.pictureBoxReport.TabStop = false;
             // 
             // Form1
             // 
@@ -237,11 +286,13 @@ namespace Dashboard
             this.pnlUserMail.ResumeLayout(false);
             this.pnlUserMail.PerformLayout();
             this.pnlManu.ResumeLayout(false);
+            this.pnlManu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxchart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).EndInit();
             this.pnlHomeDashboard.ResumeLayout(false);
             this.pnlHomeDashboard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTables)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReport)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,6 +326,12 @@ namespace Dashboard
         private System.Windows.Forms.Button btnChart;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBoxTables;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox pictureBoxAdmin;
+        private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.PictureBox pictureBoxReport;
+        private System.Windows.Forms.Button btnReport;
     }
 }
 
