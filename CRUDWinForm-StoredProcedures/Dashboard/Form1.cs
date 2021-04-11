@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Dashboard
 {
-    public partial class Form1 : Form
+    public partial class FtmTool : Form
     {
-        public Form1()
+        public FtmTool()
         {
             InitializeComponent();
         }
